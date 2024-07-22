@@ -19,7 +19,8 @@ Pod::Spec.new do |s|
   s.source_files     = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  s.dependency 'MoEngagePluginBase', '~> 4.9.0'
+  s.dependency 'MoEngagePluginBase', :git => 'https://github.com/BisoDevil/iOS-PluginBase.git'
+
   s.swift_version = '5.0'
   s.prepare_command = <<-CMD
       echo // Generated file, do not edit > Classes/MoEngageFlutterPluginInfo.swift
